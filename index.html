@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZiaSaeed Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22a50b7603.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- add logo image here remember -->
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>DEVOPS & Cloud Engineer</p>
+                <h1>Hi, I am <span>Zia</span><br>Saeed from Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- add images here remember -->
+                    <img src="images/image-zia.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Ziauddin Saeed, a DevOps Engineer and Mobile App Developer with expertise in CI/CD, Kubernetes, AWS, and Flutter.
+                        DevOps: Automated pipelines, containerized apps, and deployed scalable infrastructure using Jenkins, Docker, Terraform, and EKS.
+                        Mobile Apps: Built cross-platform apps with Flutter and Firebase, including e-commerce and tour booking solutions.
+                        Let’s connect and create something impactful! </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DevOps Engineer</span><br>Cloud & Automation</li>
+                            <li><span>App Development & Python Programming</span><br>Flutter Developer & Django RestFrameWork.</li>
+                            <li><span>Cloud Engineer </span><br>AWS & Infrastructure Automation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Flutter Mobile Application Developer</span><br>Internship Aug-dec(2024).</li>
+                          
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>BS Information Technology BZU Multan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service section is started  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Devops Services</h2>
+                    <p>Skilled in building secure, scalable infrastructure and automating CI/CD pipelines with tools like AWS, Jenkins, Docker, Kubernetes, Terraform, and Ansible. Focused on streamlining deployments, enhancing system resilience, and driving efficiency through automation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Architecture Services</h2>
+                    <p>Experienced in designing and deploying scalable, secure cloud architectures on AWS. Proficient in infrastructure as code, container orchestration, and automating cloud operations to ensure high availability, cost efficiency, and seamless deployments.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Flutter Mobile App Services</h2>
+                    <p>Skilled in building dynamic and user-friendly mobile applications using Flutter and Firebase. Experience includes developing end-to-end solutions with features like authentication, real-time messaging, booking systems, payment integration, and intuitive UIs, ensuring seamless user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio work started here  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <!-- add portfolio image here  -->
+                    <img src="images/grocery-store.png" alt="" height="340">
+                    <div class="layer">
+                        <h3>Grocery Store App:</h3>
+                        <P>Developed a full-stack grocery app with user features such as login/signup, cart management, order placement, and product search. Integrated an admin panel for product management, sales tracking, and order processing. Added secure payments using Stripe. Built with Flutter and Firebase for a smooth and responsive experience.</P>
+                        <!-- add link to the project -->
+                        <a href="https://github.com/Zia-Saeed/grocery_store_app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- add portfolio image here  -->
+                    <img src="images/trips-app.jpg" alt="" height="340">
+                    <div class="layer">
+                        <h3>Tour Organizing App</h3>
+                        <P>Created a tour booking platform allowing users to explore tours, book trips, and leave reviews. Enabled trip creation for organizers and included features like discounts, booking management, and user ratings. Powered by Flutter with Firebase for real-time data management..</P>
+                        <!-- add link to the project -->
+                        <a href="https://github.com/Zia-Saeed/Tour-Organizing-App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- add portfolio image here  -->
+                    <img src="images/devops,cloud.png" alt="" height="340">
+                    <div class="layer">
+                        <h3>Devops & Cloud Projects</h3>
+                        <P>Designed a secure, scalable VPC on AWS with private subnets, a bastion host, load balancing, and auto-scaling to ensure high availability. Automated the build, testing, and deployment of a Java application using Jenkins, ArgoCD, Docker, and Kubernetes for seamless integration and delivery. Additionally, containerized a three-tier app with Flask frontend, backend, and PostgreSQL using Docker Compose, simplifying service communication and deployment.</P>
+                        <!-- add link to the project -->
+                        <a href="https://github.com/Zia-Saeed?tab=repositories"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Zia-Saeed?tab=overview&from=2025-03-01&to=2025-03-24" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact section is started -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> zia.aseh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+923093139411</p>
+                    <div class="social-icons">
+                        <!-- add urls of social media Profiles -->
+                        <a href="https://www.linkedin.com/in/zia-saeed-824680256/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Zia-Saeed"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://web.facebook.com/zia.saeed.121"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/zia__saeed/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Zia cloud&devops resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Zia.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzKpvrtWD4AfSLCGoQLsWOVucvwhIA4aCAbegSuzsaexdiXn90YYwMwCesnP5TKWL0uIQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
